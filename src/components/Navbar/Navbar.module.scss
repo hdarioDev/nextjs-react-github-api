@@ -1,0 +1,10 @@
+@import '@styles/_colors.scss';
+
+.containerNavbar {
+    background-color: $secundary;
+    height: 100px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
