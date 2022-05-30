@@ -1,10 +1,21 @@
 @import '@styles/_colors.scss';
 
-.containerNavbar {
-    background-color: $secundary;
-    height: 100px;
-    display: flex;
-    color: white;
-    justify-content: space-around;
-    align-items: center;
+.header {
+    width: 100%;
+
+    .link {
+        cursor: pointer;
+    }
+
+    .containerNavbar {
+        position: relative;
+        background-color: $secundary;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        color: rgb(225, 225, 225);
+        justify-content: space-around;
+        align-items: center;
+    }
 }

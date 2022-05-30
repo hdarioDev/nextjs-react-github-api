@@ -1,0 +1,47 @@
+@import '@styles/_colors.scss';
+
+.Finder {
+    margin-top: 40px;
+    height: 60px;
+    // position: absolute;
+    // width: 80%;
+    background-color: #425188;
+    // top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 8px;
+
+    input {
+        width: 240px;
+        border: none;
+        border-radius: 8px;
+        background-color: #425188;
+        outline: none;
+        padding: 18px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .icon {
+        color: $success;
+    }
+
+    button {
+        background-color: $success;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: white;
+        background-color: #6386f9;
+    }
+
+}

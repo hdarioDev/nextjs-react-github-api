@@ -20,6 +20,15 @@
             "@containers/*": [
                 "containers/*"
             ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@services/*": [
+                "services/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
         }
     }
 }
