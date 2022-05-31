@@ -17,12 +17,7 @@ const index = () => {
 
 
     useEffect(() => {
-        // (async () => {
-        //     try {
-
-        // })()
         if (eventSearch) {
-
             const getUser = async () => {
                 try {
                     setLoading(true)
@@ -54,9 +49,6 @@ const index = () => {
                 <Skeleton /> :
                 !isObjEmpty(userSearched) ? <User user={userSearched} /> : <NotFoundData />
             }
-
-
-
         </AppLayout>
 
     )

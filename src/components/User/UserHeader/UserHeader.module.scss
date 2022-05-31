@@ -1,0 +1,37 @@
+@import '@styles/_colors.scss';
+
+
+
+.UserHeader {
+    display: flex;
+    height: 184px;
+    align-items: center;
+
+    img {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        border: 5px solid $primary;
+        margin: 8px;
+
+    }
+}
+
+.UserName {
+    p:nth-child(1) {
+        font-weight: bold;
+        font-size: 18px;
+
+    }
+
+    p:nth-child(2) {
+        color: $text-cyan;
+        font-size: 13px;
+    }
+
+    p:nth-child(3) {
+        font-size: 14px;
+    }
+}
+
+.UserDate {}

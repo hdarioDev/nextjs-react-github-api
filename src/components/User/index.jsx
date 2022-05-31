@@ -1,4 +1,5 @@
 import React from 'react'
+import UserHeader from '@components/User/UserHeader'
 import styles from './User.module.scss'
 
 const index = ({ user }) => {
@@ -6,7 +7,7 @@ const index = ({ user }) => {
   return (
     <>
       <article className={styles.User}>
-        <h2>{user.login}</h2>
+        <UserHeader user={user} />
       </article>
     </>
   )
