@@ -1,0 +1,14 @@
+@import '@styles/_colors.scss';
+
+.User {
+    margin-top: 22px;
+    height: 380px;
+    background-color: $secundary;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    max-height: 400px;
+    overflow: scroll;
+    border-radius: 8px;
+}

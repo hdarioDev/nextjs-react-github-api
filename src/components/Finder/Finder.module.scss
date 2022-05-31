@@ -15,7 +15,7 @@
     border-radius: 8px;
 
     input {
-        width: 240px;
+        width: 360px;
         border: none;
         border-radius: 8px;
         background-color: #425188;
@@ -44,4 +44,17 @@
         background-color: #6386f9;
     }
 
+}
+
+@media (max-width: 600px) {
+    .icon {
+        display: none;
+    }
+
+    .Finder {
+
+        input {
+            width: 200px;
+        }
+    }
 }

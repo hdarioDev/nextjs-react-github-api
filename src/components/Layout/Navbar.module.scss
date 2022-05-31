@@ -2,6 +2,8 @@
 
 .header {
     width: 100%;
+    z-index: 3;
+    position: absolute;
 
     .link {
         cursor: pointer;
@@ -17,5 +19,9 @@
         color: rgb(225, 225, 225);
         justify-content: space-around;
         align-items: center;
+    }
+
+    .toogle {
+        color: yellow;
     }
 }

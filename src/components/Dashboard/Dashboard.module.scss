@@ -1,0 +1,21 @@
+@import '@styles/_colors.scss';
+
+.Dashboard {
+    margin-top: 50px;
+    height: auto;
+    border-radius: 8px;
+    // background-color: $secundary;
+
+    article {
+
+
+        margin-bottom: 40px;
+        cursor: pointer;
+        border-radius: 8px;
+
+        img {
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+}
