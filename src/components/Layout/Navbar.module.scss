@@ -1,13 +1,11 @@
 @import '@styles/_colors.scss';
 
+
+
 .header {
     width: 100%;
     z-index: 3;
     position: absolute;
-
-    .link {
-        cursor: pointer;
-    }
 
     .containerNavbar {
         position: relative;
@@ -16,12 +14,28 @@
         width: 100%;
         position: fixed;
         display: flex;
-        color: rgb(225, 225, 225);
-        justify-content: space-around;
+        color: white;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .toogle {
         color: yellow;
+    }
+}
+
+.logoContainer {
+
+    display: flex;
+    max-width: 200px;
+
+    .link {
+        cursor: pointer;
+    }
+
+    .logo {
+        height: 140px;
     }
 }

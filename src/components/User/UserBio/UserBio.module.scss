@@ -1,0 +1,44 @@
+@import '@styles/_colors.scss';
+
+.BioContainer {
+    // background-color: rgb(119, 57, 57);
+}
+
+.Bio {
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.ContainerFollowers {
+    height: 80px;
+    background-color: $primary;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+
+    .Repos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 12px;
+            margin: 0;
+
+        }
+
+        span {
+            margin-top: 8px;
+        }
+    }
+
+}

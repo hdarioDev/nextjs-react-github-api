@@ -2,15 +2,23 @@
 
 .User {
     margin-top: 22px;
-    height: 380px;
+    height: 400px;
     background-color: $secundary;
     width: 90%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    flex-direction: column;
     color: #fff;
-    max-height: 400px;
+    max-height: 500px;
     overflow: scroll;
     border-radius: 8px;
 
 
+}
+
+
+@media (max-width: 600px) {
+    .User {
+        height: 450px;
+    }
 }

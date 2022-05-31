@@ -1,10 +1,13 @@
 @import '@styles/_colors.scss';
 
 .Dashboard {
-    margin-top: 50px;
+    margin-top: 10%;
     height: auto;
     border-radius: 8px;
     // background-color: $secundary;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 
     article {
 
@@ -12,10 +15,35 @@
         margin-bottom: 40px;
         cursor: pointer;
         border-radius: 8px;
+        transition: background-color 2s ease-out 100ms;
+
+        :hover {
+            // -webkit-transform: scale(1.1);
+            // transform: scale(1.1);
+            filter: opacity(0.9) drop-shadow(0 0 0 rgba(235, 235, 235, 0.983));
+
+        }
 
         img {
+            // transition: background-color 2s ease-out 100ms;
+            filter: opacity(0.6) drop-shadow(0 0 0 rgb(196, 198, 205));
+
+
             border-radius: 8px;
             object-fit: cover;
+
+
+
         }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .Dashboard {
+        width: auto;
+        margin-top: 20%;
+        display: block;
+
     }
 }

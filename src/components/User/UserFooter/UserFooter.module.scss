@@ -1,0 +1,36 @@
+.UserFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 88%;
+    margin: 0 auto;
+    border-radius: 8px;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin: 0;
+
+        }
+
+        span {
+            margin-left: 8px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .UserFooter {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 140px;
+        padding-bottom: 10px;
+        align-items: flex-start;
+        // justify-content: space-around;
+    }
+}

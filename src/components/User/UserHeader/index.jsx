@@ -5,7 +5,7 @@ import styles from './UserHeader.module.scss'
 const index = ({ user }) => {
     return (
         <div className={styles.UserHeader}>
-            {user.avatar_url ? <img alt={`Photo ${user.name}`} src={user.avatar_url} width={200} height={200} /> : null}
+            {user.avatar_url ? <a target="_blank" href={`${user.html_url}`}><img alt={`Photo ${user.name}`} src={user.avatar_url} width={200} height={200} /> </a> : null}
             <div className={styles.UserName}>
                 <p>{user.name}</p>
                 <p>@{user.login}</p>

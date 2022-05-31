@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { VscGithub } from "react-icons/vsc"
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { ThemeContext } from '@context/ThemeContext'
+import SvgLogo from '../Logo'
 import styles from './Navbar.module.scss'
 
 const index = () => {
@@ -22,9 +23,12 @@ const index = () => {
             <nav className={styles.containerNavbar} >
 
                 <Link href="/">
-                    <a > <VscGithub className={styles.link} size="40" />   </a>
+                    <a className={styles.logoContainer} >
+                        <VscGithub className={styles.link} size="40" />
+                    </a>
                 </Link>
 
+                <SvgLogo className={styles.logo} />
 
                 <div className={styles.toogle}>
                     <DarkModeSwitch
