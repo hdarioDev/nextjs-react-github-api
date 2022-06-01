@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './UserBio.module.scss'
 
-const index = ({ user }) => {
+const Index = ({ user }) => {
     return (
         <section className={styles.BioContainer}>
             <div className={styles.Bio}>
@@ -25,4 +25,4 @@ const index = ({ user }) => {
     )
 }
 
-export default index
+export default Index

@@ -3,7 +3,7 @@ import { FaTwitter, FaLink, FaMapMarkerAlt } from 'react-icons/fa'
 
 import styles from './UserFooter.module.scss'
 
-const index = ({ user }) => {
+const Index = ({ user }) => {
     return (
         <section className={styles.UserFooter}>
             <div >
@@ -35,4 +35,4 @@ const index = ({ user }) => {
     )
 }
 
-export default index
+export default Index

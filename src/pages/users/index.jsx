@@ -8,38 +8,29 @@ import { isObjEmpty } from '@utils/isObjempty'
 import { SearchContext } from '@context/SearchContext'
 import Skeleton from '@components/Skeleton'
 
-const index = () => {
+const Index = () => {
 
     const [loading, setLoading] = useState(false)
 
     const { dataSearched, setDataSearched, setEventSearch, eventSearch } = useContext(SearchContext)
-
-    console.log(" page user dataSearched CLEAN", dataSearched);
-
 
     useEffect(() => {
         if (eventSearch) {
             const getUser = async () => {
                 try {
                     setLoading(true)
-                    console.log("A BUSCAR");
                     const data = await getDataApi(dataSearched, 'users')
                     setLoading(false)
-                    console.log("data ", data);
                     setDataSearched(data.data)
 
                 } catch (error) {
                     setLoading(false)
-                    console.log("Error al traer usuarios");
                 }
             }
             getUser()
             setEventSearch(false)
-        } else {
-            console.log("NO DEBO BUSCAR ");
         }
-
-    }, [eventSearch])
+    }, [eventSearch])// eslint-disable-line react-hooks/exhaustive-deps
 
 
     return (
@@ -55,4 +46,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

@@ -4,14 +4,13 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 import styles from './Skeleton.module.scss'
 
-const index = ({ type = 'users' }) => {
+const Index = ({ type = 'users' }) => {
     let size = 400
     let count = 1
     if (type === 'repos') {
         size = 150
         count = 5
     }
-    console.log("size ", size);
     return (
         <SkeletonTheme baseColor="#2b365e" highlightColor="#1d253f">
             <p className={styles.Skeleton} >
@@ -23,4 +22,4 @@ const index = ({ type = 'users' }) => {
     )
 }
 
-export default index
+export default Index

@@ -3,7 +3,7 @@ import styles from './Repositories.module.scss'
 import { BiLinkExternal } from "react-icons/bi"
 
 
-const index = ({ repository }) => {
+const Index = ({ repository }) => {
     return (
         <section className={styles.Repositories}>
             <div className={styles.Header}>
@@ -17,9 +17,9 @@ const index = ({ repository }) => {
                 <p>Updated: {new Date(repository.updated_at).toLocaleDateString('en-us', { year: "numeric", month: "short" })} </p>
             </div>
 
-            <a href={repository.clone_url} target="_blank"> <BiLinkExternal size={24} /> </a>
+            <a href={repository.clone_url} target="_blank" rel="noopener noreferrer"> <BiLinkExternal size={24} /> </a>
         </section>
     )
 }
 
-export default index
+export default Index

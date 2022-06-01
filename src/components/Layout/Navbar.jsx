@@ -6,10 +6,9 @@ import { ThemeContext } from '@context/ThemeContext'
 import SvgLogo from '../Logo'
 import styles from './Navbar.module.scss'
 
-const index = () => {
+const Index = () => {
 
     const { isDark, setIsDark } = useContext(ThemeContext)
-    console.log("isDark from navbar ", isDark);
     const toggleDarkMode = (checked) => {
         setIsDark(checked)
     }
@@ -41,4 +40,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

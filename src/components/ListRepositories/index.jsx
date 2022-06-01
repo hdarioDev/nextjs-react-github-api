@@ -2,8 +2,7 @@ import React from 'react'
 import Respositories from '@components/Repositories'
 import styles from './ListRepositories.module.scss'
 
-const index = ({ repositories }) => {
-    console.log("repositories COMPONENT ", repositories);
+const Index = ({ repositories }) => {
     if (!Array.isArray(repositories)) {
         return null
     }
@@ -16,4 +15,4 @@ const index = ({ repositories }) => {
     )
 }
 
-export default index
+export default Index

@@ -4,13 +4,12 @@ import MenuOption from '@components/Dashboard/MenuOption'
 import { OPTIONS_MENU } from '@utils/constants'
 import styles from './Dashboard.module.scss'
 
-const index = () => {
-    console.log("OPTIONS_MENU ", OPTIONS_MENU)
+const Index = () => {
 
     const { setDataSearched } = useContext(SearchContext)
     useEffect(() => {
         setDataSearched({})
-    }, [])
+    }, [])// eslint-disable-line react-hooks/exhaustive-deps
     return (
         <section className={styles.Dashboard}>
             {OPTIONS_MENU.map((item) => (
@@ -22,4 +21,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

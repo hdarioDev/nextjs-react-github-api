@@ -4,7 +4,7 @@ import Navbar from '@components/Layout/Navbar'
 import styles from "./Layout.module.scss"
 
 
-const index = ({ children }) => {
+const Index = ({ children }) => {
 
     return (
         <>
@@ -19,4 +19,4 @@ const index = ({ children }) => {
     )
 }
 
-export default index
+export default Index

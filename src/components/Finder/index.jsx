@@ -3,7 +3,7 @@ import { FaUserCheck } from "react-icons/fa"
 import styles from './Finder.module.scss'
 import { SearchContext } from '@context/SearchContext'
 
-const index = ({ placeholderText = "Search by username" }) => {
+const Index = ({ placeholderText = "Search by username" }) => {
 
     const { setDataSearched, setEventSearch } = useContext(SearchContext)
     const focusInputRef = useRef();
@@ -29,4 +29,4 @@ const index = ({ placeholderText = "Search by username" }) => {
     )
 }
 
-export default index
+export default Index

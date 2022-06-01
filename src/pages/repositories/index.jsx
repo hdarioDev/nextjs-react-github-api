@@ -8,7 +8,7 @@ import { isObjEmpty } from '@utils/isObjempty'
 import { SearchContext } from '@context/SearchContext'
 import Skeleton from '@components/Skeleton'
 
-const index = () => {
+const Index = () => {
 
     const [loading, setLoading] = useState(false)
 
@@ -19,24 +19,19 @@ const index = () => {
             const getUser = async () => {
                 try {
                     setLoading(true)
-                    console.log("A BUSCAR");
                     const data = await getDataApi(dataSearched, 'repositories')
                     setLoading(false)
-                    console.log("data repo ", data);
                     setDataSearched(data.data.items)
 
                 } catch (error) {
                     setLoading(false)
-                    console.log("Error al traer repos");
                 }
             }
             getUser()
             setEventSearch(false)
-        } else {
-            console.log("NO DEBO BUSCAR repos ");
         }
 
-    }, [eventSearch])
+    }, [eventSearch])// eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <AppLayout>
@@ -49,4 +44,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
