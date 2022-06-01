@@ -14,7 +14,6 @@ const Index = () => {
     }
 
     return (
-
         <header className={styles.header}>
             <nav className={styles.containerNavbar} >
                 <a href="https://github.com/hdarioDev" target="_blank" rel="noopener noreferrer" className={styles.logoContainer} >
@@ -30,7 +29,6 @@ const Index = () => {
                         sunColor={'white'}
                     />
                 </div>
-
             </nav>
         </header>
 
