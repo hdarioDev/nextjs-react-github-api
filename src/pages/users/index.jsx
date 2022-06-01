@@ -3,7 +3,7 @@ import AppLayout from '@components/Layout'
 import User from '@components/User'
 import Finder from '@components/Finder'
 import NotFoundData from '@components/NotFoundData'
-import { getUsersData } from '@services/users'
+import { getDataApi } from '@services/users'
 import { isObjEmpty } from '@utils/isObjempty'
 import { SearchContext } from '@context/SearchContext'
 import Skeleton from '@components/Skeleton'
@@ -12,9 +12,9 @@ const index = () => {
 
     const [loading, setLoading] = useState(false)
 
-    const { userSearched, setUserSearched, setEventSearch, eventSearch } = useContext(SearchContext)
+    const { dataSearched, setDataSearched, setEventSearch, eventSearch } = useContext(SearchContext)
 
-    console.log(" page user userSearched CLEAN", userSearched);
+    console.log(" page user dataSearched CLEAN", dataSearched);
 
 
     useEffect(() => {
@@ -23,10 +23,10 @@ const index = () => {
                 try {
                     setLoading(true)
                     console.log("A BUSCAR");
-                    const data = await getUsersData()
+                    const data = await getDataApi(dataSearched, 'users')
                     setLoading(false)
                     console.log("data ", data);
-                    setUserSearched(data.data)
+                    setDataSearched(data.data)
 
                 } catch (error) {
                     setLoading(false)
@@ -48,7 +48,7 @@ const index = () => {
             <Finder />
             {(loading) ?
                 <Skeleton /> :
-                !isObjEmpty(userSearched) ? <User user={userSearched} /> : <NotFoundData />
+                !isObjEmpty(dataSearched) ? <User user={dataSearched} /> : <NotFoundData />
             }
         </AppLayout>
 

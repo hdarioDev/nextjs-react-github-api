@@ -10,8 +10,6 @@ const index = ({ repository }) => {
                 <p>{repository.name.toUpperCase()} </p>
                 <p>{repository.language} </p>
                 <p>{repository.description} </p>
-
-                {/* <p>{repository.html_url} </p> */}
             </div>
             <div className={styles.Footer}>
                 <p>Created: {new Date(repository.created_at).toLocaleDateString('en-us', { year: "numeric", month: "short" })} </p>

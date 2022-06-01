@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from './UserHeader.module.scss'
 
 const index = ({ user }) => {

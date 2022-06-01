@@ -6,14 +6,11 @@
     background-color: $secundary;
     width: 90%;
     display: flex;
-    // justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: $white;
     max-height: 500px;
     overflow: scroll;
     border-radius: 8px;
-
-
 }
 
 

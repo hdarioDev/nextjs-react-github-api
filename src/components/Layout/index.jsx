@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React, { useContext } from 'react'
+import React from 'react'
 import Navbar from '@components/Layout/Navbar'
 import styles from "./Layout.module.scss"
 

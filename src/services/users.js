@@ -1,11 +1,11 @@
 import { API } from '@utils/constants'
 import axios from 'axios'
-export const getUsersData = async (type = 'users') => {
+export const getDataApi = async (searched, type = 'users') => {
     try {
         if (type === 'repositories') {
-            return await axios(API + 'search/repositories?q=tetris')
+            return await axios(API + 'search/repositories?q=' + searched)
         } else {
-            return await axios(API + 'users/hdariodev')
+            return await axios(API + 'users/' + searched)
         }
     } catch (error) {
         throw error

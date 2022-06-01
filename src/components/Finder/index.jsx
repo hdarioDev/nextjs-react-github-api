@@ -5,16 +5,19 @@ import { SearchContext } from '@context/SearchContext'
 
 const index = ({ placeholderText = "Search by username" }) => {
 
-    const { userSearched, setUserSearched, eventSearch, setEventSearch } = useContext(SearchContext)
+    const { setDataSearched, setEventSearch } = useContext(SearchContext)
     const focusInputRef = useRef();
 
     const handleSearch = () => {
-        console.log("send...", focusInputRef.current.value)
-        setUserSearched(focusInputRef.current.value)
-        setEventSearch(true)
+        const inputValue = focusInputRef.current.value.trim()
+        if (inputValue != '') {
+            setDataSearched(focusInputRef.current.value)
+            setEventSearch(true)
+        }
+
     }
     const handleChanges = () => {
-        console.log("keys press");
+
         setEventSearch(false)
     }
     return (

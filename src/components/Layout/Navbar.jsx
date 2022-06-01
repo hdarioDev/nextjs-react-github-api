@@ -10,11 +10,8 @@ const index = () => {
 
     const { isDark, setIsDark } = useContext(ThemeContext)
     console.log("isDark from navbar ", isDark);
-    // const [isDarkMode, setDarkMode] = React.useState(false)
     const toggleDarkMode = (checked) => {
-        // setDarkMode(checked)
-        // console.log(" checked ", checked)
-        setIsDark(!isDark)
+        setIsDark(checked)
     }
 
     return (
@@ -27,16 +24,14 @@ const index = () => {
                         <VscGithub className={styles.link} size="40" />
                     </a>
                 </Link>
-
                 <SvgLogo className={styles.logo} />
-
                 <div className={styles.toogle}>
                     <DarkModeSwitch
                         // style={{ color: 'yellow' }}
                         checked={isDark}
                         onChange={toggleDarkMode}
                         size={40}
-                        sunColor="white"
+                        sunColor={'white'}
                     />
                 </div>
 

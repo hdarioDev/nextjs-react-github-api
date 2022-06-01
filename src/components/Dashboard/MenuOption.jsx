@@ -1,9 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import { RiUserSearchLine } from 'react-icons/ri'
 import { BiCodeBlock } from 'react-icons/bi'
-import ImgDataUsers from '../../public/users.jpeg'
-import ImgDataRespositories from '../../public/repositories.jpeg'
 import Link from 'next/link'
 
 const MenuOption = ({ title, link }) => {

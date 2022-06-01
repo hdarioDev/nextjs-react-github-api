@@ -5,7 +5,6 @@ import UserFooter from '@components/User/UserFooter'
 import styles from './User.module.scss'
 
 const index = ({ user }) => {
-  console.log("me enviar a render ", user);
   return (
     <>
       <article className={styles.User}>

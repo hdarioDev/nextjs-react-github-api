@@ -1,19 +1,15 @@
 @import '@styles/_colors.scss';
 
-.BioContainer {
-    // background-color: rgb(119, 57, 57);
-}
-
 .Bio {
-
     font-size: 14px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .ContainerFollowers {
     height: 80px;
     background-color: $primary;
-    color: #fff;
+    color: $white;
     display: flex;
     align-items: center;
     justify-content: space-around;

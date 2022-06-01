@@ -7,9 +7,9 @@ import styles from './Dashboard.module.scss'
 const index = () => {
     console.log("OPTIONS_MENU ", OPTIONS_MENU)
 
-    const { setUserSearched } = useContext(SearchContext)
+    const { setDataSearched } = useContext(SearchContext)
     useEffect(() => {
-        setUserSearched({})
+        setDataSearched({})
     }, [])
     return (
         <section className={styles.Dashboard}>
