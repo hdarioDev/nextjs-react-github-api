@@ -17,12 +17,9 @@ const Index = () => {
 
         <header className={styles.header}>
             <nav className={styles.containerNavbar} >
-
-                <Link >
-                    <a href="https://github.com/hdarioDev" target="_blank" rel="noopener noreferrer" className={styles.logoContainer} >
-                        <VscGithub className={styles.link} size="40" />
-                    </a>
-                </Link>
+                <a href="https://github.com/hdarioDev" target="_blank" rel="noopener noreferrer" className={styles.logoContainer} >
+                    <VscGithub className={styles.link} size="40" />
+                </a>
                 <SvgLogo className={styles.logo} />
                 <div className={styles.toogle}>
                     <DarkModeSwitch
