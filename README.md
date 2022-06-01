@@ -35,7 +35,7 @@ npm run build
 
 ## Screenshot users
 
-![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubUsers?raw=true)
+![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubUsers.png?raw=true)
 
 ## Screenshot repos
 
