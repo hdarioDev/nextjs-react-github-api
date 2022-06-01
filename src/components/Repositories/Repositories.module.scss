@@ -1,0 +1,73 @@
+@import '@styles/_colors.scss';
+
+
+
+.Repositories {
+    height: auto;
+    background-color: $secundary;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    max-height: 300px;
+    overflow: scroll;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 22px;
+    padding: 8px;
+
+    .Header {
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        p:nth-child(1) {
+            color: $text-cyan;
+            font-size: 18px;
+            margin: 0;
+
+        }
+
+        p:nth-child(2) {
+            margin: 8px;
+            font-size: 14px;
+            border-style: ridge;
+            border-color: rgb(178, 178, 178);
+            border-radius: 8px;
+            padding: 8px;
+
+        }
+
+        p:nth-child(3) {
+            text-align: center;
+            font-size: 14px;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-top: 0;
+            color: $text-smooth;
+        }
+
+
+    }
+
+    .Footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .spanSeparator {
+            font-size: 28px;
+            font-weight: 200;
+        }
+
+        margin-bottom: 8px;
+    }
+}

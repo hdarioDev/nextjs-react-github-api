@@ -1,5 +1,4 @@
 import React, { useRef, useContext } from 'react'
-import { FiSearch } from "react-icons/fi"
 import { FaUserCheck } from "react-icons/fa"
 import styles from './Finder.module.scss'
 import { SearchContext } from '@context/SearchContext'

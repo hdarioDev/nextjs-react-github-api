@@ -3,6 +3,7 @@ import AppLayout from '@components/Layout'
 import User from '@components/User'
 import Finder from '@components/Finder'
 import NotFoundData from '@components/NotFoundData'
+import ListRepositories from '@components/ListRepositories'
 import { getUsersData } from '@services/users'
 import { isObjEmpty } from '@utils/isObjempty'
 import { SearchContext } from '@context/SearchContext'
@@ -13,7 +14,7 @@ const index = () => {
     const [loading, setLoading] = useState(false)
 
     const { userSearched, setUserSearched, setEventSearch, eventSearch } = useContext(SearchContext)
-    console.log(" page user userSearched ", userSearched);
+    console.log(" page repo repos ", userSearched);
 
     useEffect(() => {
         if (eventSearch) {
@@ -21,20 +22,20 @@ const index = () => {
                 try {
                     setLoading(true)
                     console.log("A BUSCAR");
-                    const data = await getUsersData()
+                    const data = await getUsersData('repositories')
                     setLoading(false)
-                    console.log("data ", data);
-                    setUserSearched(data.data)
+                    console.log("data repo ", data);
+                    setUserSearched(data.data.items)
 
                 } catch (error) {
                     setLoading(false)
-                    console.log("Error al traer usuarios");
+                    console.log("Error al traer repos");
                 }
             }
             getUser()
             setEventSearch(false)
         } else {
-            console.log("NO DEBO BUSCAR ");
+            console.log("NO DEBO BUSCAR repos ");
         }
 
     }, [eventSearch])
@@ -43,8 +44,8 @@ const index = () => {
         <AppLayout>
             <Finder placeholderText='Search repositories' />
             {(loading) ?
-                <Skeleton /> :
-                !isObjEmpty(userSearched) ? <User user={userSearched} /> : <NotFoundData />
+                <Skeleton type="repos" /> :
+                !isObjEmpty(userSearched) ? <ListRepositories repositories={userSearched} /> : <NotFoundData />
             }
         </AppLayout>
     )

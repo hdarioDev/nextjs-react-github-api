@@ -13,7 +13,8 @@ const index = () => {
     const [loading, setLoading] = useState(false)
 
     const { userSearched, setUserSearched, setEventSearch, eventSearch } = useContext(SearchContext)
-    console.log(" page user userSearched ", userSearched);
+
+    console.log(" page user userSearched CLEAN", userSearched);
 
 
     useEffect(() => {

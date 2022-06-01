@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ImgData from '../../public/image-no-data.png'
+import ImgData from '../../public/clean.png'
 import styles from './NotFoundData.module.scss'
 
 const index = () => {
