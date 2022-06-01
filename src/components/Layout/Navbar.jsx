@@ -18,8 +18,8 @@ const Index = () => {
         <header className={styles.header}>
             <nav className={styles.containerNavbar} >
 
-                <Link href="https://github.com/hdarioDev">
-                    <a className={styles.logoContainer} >
+                <Link >
+                    <a href="https://github.com/hdarioDev" target="_blank" rel="noopener noreferrer" className={styles.logoContainer} >
                         <VscGithub className={styles.link} size="40" />
                     </a>
                 </Link>
