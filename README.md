@@ -10,7 +10,8 @@ https://api.github.com/
 
 # Demo in vercel
 
-https://react-github-api-1d04qoclr-hdariodev.vercel.app
+https://react-github-api-cowpy15g5-hdariodev.vercel.app
+
 ## Install
 
 ```
@@ -35,7 +36,7 @@ npm run build
 
 ## Screenshot users
 
-![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubUsers?raw=true)
+![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubUsers.png?raw=true)
 
 ## Screenshot repos
 
