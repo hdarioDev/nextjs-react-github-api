@@ -10,7 +10,7 @@ https://api.github.com/
 
 # Demo in vercel
 
-https://react-github-api-n23xxh827-hdariodev.vercel.app
+https://nextjs-react-github-khkuusboq-hdariodev.vercel.app
 
 ## Install
 
