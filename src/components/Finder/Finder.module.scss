@@ -1,10 +1,8 @@
 @import '@styles/_colors.scss';
 
 .Finder {
-    margin-top: 40px;
-    height: 60px;
-    // position: absolute;
-    // width: 80%;
+
+    margin-left: 20%;
     background-color: #425188;
     // top: 80px;
     display: flex;
@@ -13,6 +11,7 @@
     padding-right: 14px;
     padding-left: 14px;
     border-radius: 8px;
+    margin: 0 auto;
 
     input {
         width: 360px;

@@ -1,0 +1,22 @@
+@import '@styles/_colors.scss';
+
+.Header {
+    margin-top: 40px;
+    height: 60px;
+    color: $text-smooth;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: flex-start;
+
+    a {
+        padding: 6px;
+    }
+
+    a:hover {
+        background-color: $secundary;
+        border-radius: 10px;
+        padding: 6px;
+
+    }
+}

@@ -9,21 +9,28 @@ const Index = ({ placeholderText = "Search by username" }) => {
     const focusInputRef = useRef();
 
     const handleSearch = () => {
+
+        console.log("handleSearch");
         const inputValue = focusInputRef.current.value.trim()
+        console.log(inputValue);
         if (inputValue != '') {
-            setDataSearched(focusInputRef.current.value)
+            setDataSearched(inputValue)
             setEventSearch(true)
         }
 
     }
     const handleChanges = () => {
-
         setEventSearch(false)
+    }
+    const handleEnter = (e) => {
+        if (e.charCode == 13) {
+            handleSearch()
+        }
     }
     return (
         <div className={styles.Finder}>
             <div className={styles.icon} ><FaUserCheck size="30" /> </div>
-            <input type="text" onChange={handleChanges} ref={focusInputRef} placeholder={placeholderText} />
+            <input type="text" onChange={handleChanges} onKeyPress={(event) => handleEnter(event)} ref={focusInputRef} placeholder={placeholderText} />
             <button onClick={handleSearch}>Search</button>
         </div>
     )

@@ -18,6 +18,10 @@
     margin-top: 22px;
     padding: 8px;
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     .Header {
         padding-top: 8px;
         display: flex;

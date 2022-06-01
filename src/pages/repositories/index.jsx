@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import AppLayout from '@components/Layout'
-import Finder from '@components/Finder'
+import Header from '@components/Layout/Header'
 import NotFoundData from '@components/NotFoundData'
 import ListRepositories from '@components/ListRepositories'
 import { getDataApi } from '@services/users'
@@ -35,7 +35,7 @@ const Index = () => {
 
     return (
         <AppLayout>
-            <Finder placeholderText='Search repositories' />
+            <Header placeholderText='Search repositories' />
             {(loading) ?
                 <Skeleton type="repos" /> :
                 !isObjEmpty(dataSearched) ? <ListRepositories repositories={dataSearched} /> : <NotFoundData />
