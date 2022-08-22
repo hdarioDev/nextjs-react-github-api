@@ -32,15 +32,11 @@ npm run build
 
 ## Screenshot
 
-![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubHome.png?raw=true)
+![nextGitHubHome](https://user-images.githubusercontent.com/63020855/185959892-9c1b2b83-10be-4668-a498-4acce9f026e8.png)
 
 ## Screenshot users
 
-![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitHubUsers.png?raw=true)
-
-## Screenshot repos
-
-![App Screenshot](https://github.com/hdarioDev/assets/blob/main/nextGitJHubRepos.png?raw=true)
+![nextGitHubUsers](https://user-images.githubusercontent.com/63020855/185959812-0ad0be83-c69f-43b7-bfc6-994ad180db82.png)
 
 ## Authors
 
